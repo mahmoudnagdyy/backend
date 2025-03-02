@@ -10,7 +10,13 @@ const bootstrap = (app, express) => {
 
     connectDB()
     app.use(express.json())
-    app.use(cors())
+    app.use(cors(
+        {
+            origin: ['https://login-signup-orcin.vercel.app'],
+            credentials: true,
+            methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
+        }
+    ))
     app.use('/auth', authRouter)
     // app.use('/user', userRouter)
     app.use('*', (req, res, next) => {
