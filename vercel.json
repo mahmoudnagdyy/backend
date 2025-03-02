@@ -10,7 +10,10 @@
         {
             "src": "/(.*)", 
             "dest": "/"
-            
+        },
+        {
+            "src": "ConfirmEmail",
+            "dest": "/"
         }
     ]
         
