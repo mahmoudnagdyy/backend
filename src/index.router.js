@@ -18,7 +18,7 @@ const bootstrap = (app, express) => {
 
         }
     ))
-    app.use('https://backend-jade-zeta.vercel.app/auth', authRouter)
+    app.use('https://login-signup-orcin.vercel.app/auth', authRouter)
     // app.use('/user', userRouter)
     app.use('*', (req, res, next) => {
         return res.send({message: 'Endpoint not found!'})
