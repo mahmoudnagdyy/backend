@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
 bootstrap(app, express)
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${port}`);
 })
