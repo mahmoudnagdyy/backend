@@ -12,7 +12,7 @@ const bootstrap = (app, express) => {
     app.use(express.json())
     app.use(cors(
         {
-            origin: ['https://login-signup-orcin.vercel.app'],
+            origin: 'https://backend-jade-zeta.vercel.app/',
             credentials: true,
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
 
