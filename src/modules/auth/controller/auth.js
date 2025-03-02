@@ -7,8 +7,7 @@ import bcrypt from 'bcryptjs'
 export const signUp = asyncHandler(
     async (req, res, next) => {
 
-        const { name, email, password } = req.body
-
+        const { name, email, password } = req.body 
 
         const checkUser = await userModel.findOne({ email })
 

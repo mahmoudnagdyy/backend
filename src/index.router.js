@@ -12,9 +12,10 @@ const bootstrap = (app, express) => {
     app.use(express.json())
     app.use(cors(
         {
-            origin: ['https://login-signup-prmi8pms9-mahmoudnagdyys-projects.vercel.app'],
+            origin: ['https://login-signup-orcin.vercel.app/'],
             credentials: true,
-            methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
+            methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+
         }
     ))
     app.use('/auth', authRouter)
