@@ -12,7 +12,7 @@ const bootstrap = (app, express) => {
     app.use(express.json())
     app.use(cors())
     app.use('/auth', authRouter)
-    app.use('/user', userRouter)
+    // app.use('/user', userRouter)
     app.use('*', (req, res, next) => {
         return res.send({message: 'Endpoint not found!'})
     })
