@@ -5,6 +5,10 @@ dotenv.config()
 const app = express();
 const port = 5000
 
+app.get('/', (req, res) => {
+    return res.send('Hello World!');
+})
+
 bootstrap(app, express)
 
 

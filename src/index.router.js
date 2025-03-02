@@ -12,8 +12,8 @@ const bootstrap = (app, express) => {
     app.use(express.json())
     app.use(cors(
         {
-            origin: '*',
-            credentials: true,
+            origin: 'http://localhost:3000',
+            allowedHeaders: [ 'Content-Type', 'Authorization'],
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
 
         }
