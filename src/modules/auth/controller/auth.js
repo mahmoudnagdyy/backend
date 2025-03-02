@@ -48,7 +48,7 @@ export const signUp = asyncHandler(
                         
                         <tr>
                             <td>
-                            <a style="text-decoration: none; background: linear-gradient(135deg, #f75959 0%, #f35587 100%); color: white; padding: 10px 30px; font-size: 20px; border-radius: 20px;" href = '${req.protocol}://${req.headers.host}/user/confirmEmail/${token}'>Confirm Email</a>
+                            <a style="text-decoration: none; background: linear-gradient(135deg, #f75959 0%, #f35587 100%); color: white; padding: 10px 30px; font-size: 20px; border-radius: 20px;" href = '${req.protocol}://${req.headers.host}/auth/confirmEmail/${token}'>Confirm Email</a>
                             </td>
                         </tr>
                         
