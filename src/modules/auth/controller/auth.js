@@ -90,7 +90,7 @@ export const confirmEmail = asyncHandler(
             `
         })
 
-        return res.redirect('http://localhost:3000')
+        return res.redirect('https://login-signup-orcin.vercel.app')
         
     }
 )
