@@ -5,8 +5,11 @@ import cors from 'cors'
 dotenv.config()
 const app = express();
 
-app.use(cors())
-
+app.use(cors({
+    origin: 'https://login-signup-orcin.vercel.app', // Replace this with your frontend URL
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization'
+  }));
 app.get('/', (req, res) => {
     return res.send('Hello World!');
 })
